@@ -1,6 +1,7 @@
 import pygame
 import os
 import random
+
 pygame.init()
 
 SCREEN_HEIGHT=700
@@ -66,7 +67,7 @@ class mainCharacter:
         self.rect=self.image.get_rect()
         self.rect.x=self.X_POS
         self.rect.y=self.Y_POS
-        pygame.time.Clock().tick(10)
+
         self.step_index+=1
         self.run=True
 
