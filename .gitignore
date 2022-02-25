@@ -1,0 +1,7 @@
+# remove __pycache__
+__pycache__
+
+# remove the virtualenv
+venv 
+env
+
