@@ -186,46 +186,50 @@ def main():
     player=mainCharacter()
     bg=background()
     while run:
-        #for event in pygame.event.get():
-            #if event.type == pygame.QUIT:
-                #run=False
-            pygame.event.get()
-            SCREEN.fill((255,255,255))
-            userInput=pygame.key.get_pressed()
 
-            bg.draw(SCREEN)
-            bg.update()
-            score()
+        
+
+        pygame.event.get()
+        SCREEN.fill((255,255,255))
+        userInput=pygame.key.get_pressed()
+
+        bg.draw(SCREEN)
+        bg.update()
+        score()
+        
+        
+        
+        if len(obstacles) == 0:
+            obstacles.append(Stone(ROCK))
+
+        if len(gainers) == 0:
+            gainers.append(Flower(FLOWER))
+
+        for obstacle in obstacles:
+            obstacle.draw(SCREEN)
+            obstacle.update()
+            if player.rect.colliderect(obstacle.rect):
+                #pygame.draw.rect(SCREEN,(255,0,0),player.rect,2)
+                collisions+=1
+                continue
+                #print(collisions)
+        for fl in gainers:
+            fl.draw(SCREEN)
+            fl.update()
+            if player.rect.colliderect(fl.rect):
+                #pygame.draw.rect(SCREEN,(0,255,0),player.rect,2)
+                scoregain+=1
+                continue
+
+        player.draw(SCREEN)
+        player.update(userInput)      
+
             
-            
-            
-            if len(obstacles) == 0:
-                obstacles.append(Stone(ROCK))
+        pygame.display.update()
 
-            if len(gainers) == 0:
-                gainers.append(Flower(FLOWER))
-
-            for obstacle in obstacles:
-                obstacle.draw(SCREEN)
-                obstacle.update()
-                if player.rect.colliderect(obstacle.rect):
-                    #pygame.draw.rect(SCREEN,(255,0,0),player.rect,2)
-                    collisions+=1
-                    continue
-                    #print(collisions)
-            for fl in gainers:
-                fl.draw(SCREEN)
-                fl.update()
-                if player.rect.colliderect(fl.rect):
-                    #pygame.draw.rect(SCREEN,(0,255,0),player.rect,2)
-                    scoregain+=1
-                    continue
-
-            player.draw(SCREEN)
-            player.update(userInput)      
-
-                
-            pygame.display.update()
+        # enable quit functionality in pygame
+        for event in pygame.event.get():
+            run = False if event.type == pygame.QUIT else True
 
 if __name__ == '__main__':
     main()
