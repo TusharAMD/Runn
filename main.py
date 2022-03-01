@@ -1,6 +1,8 @@
+from itertools import filterfalse
 import pygame
 import os
 import random
+import sys
 
 pygame.init()
 
@@ -23,6 +25,38 @@ for i in range(len(BCKGRD)):
 ROCK[0]=pygame.transform.scale(ROCK[0],(50,50))
 
 FLOWER[0]=pygame.transform.scale(FLOWER[0],(70,70))
+
+class State:
+    
+    def __init__(self):
+        self.main_menu = True
+        self.flower_game_start = False
+
+
+        self.stone_collision = False
+        self.flower_collision = False
+
+class Menu:
+
+    def __init__(self):
+        self.bg_color = (255,255,255)
+        self.text_color = (50,50,50)
+        self.font_50 =  pygame.font.Font("assets/font.otf", 50)
+        self.font_80 =  pygame.font.Font("assets/font.otf", 80)
+        
+        self.start_image = self.font_50.render("Press Space To Start" , True , self.text_color , self.bg_color)
+        self.start_image_rect = self.start_image.get_rect()
+        self.mp_x = SCREEN_WIDTH/2 - self.start_image_rect[2]/2
+        self.mp_y = 2*SCREEN_HEIGHT/3 - self.start_image_rect[3]/2 
+
+        self.game_name_image = self.font_80.render("Runn" , True , self.text_color , self.bg_color)
+        self.game_name_image_rect = self.game_name_image.get_rect()
+        self.game_name_x = SCREEN_WIDTH/2 - self.game_name_image_rect[2]/2
+        self.game_name_y = SCREEN_HEIGHT/3 - self.game_name_image_rect[3]/2 
+
+    def  draw_mainmenu(self , SCREEN):
+        SCREEN.blit(self.game_name_image , [self.game_name_x , self.game_name_y])
+        SCREEN.blit(self.start_image , [self.mp_x , self.mp_y])
 
 class mainCharacter:
     X_POS=280
@@ -87,7 +121,7 @@ class background:
         self.rect.x=self.X_POS
         self.rect.y=self.Y_POS
 
-    def update(self):
+    def update(self): 
         if self.run:
             self.run_func()
         if self.step_index ==3:
@@ -106,6 +140,7 @@ class background:
 
 def score():
     global points, game_speed, collisions, scoregain
+    global initial
     font=pygame.font.Font('freesansbold.ttf',20)
     points=points+1
 
@@ -185,6 +220,10 @@ def main():
     clock=pygame.time.Clock()
     player=mainCharacter()
     bg=background()
+    state = State()
+    menu = Menu()
+    pygame.display.set_caption("Runn")
+
     while run:
 
         
@@ -193,43 +232,73 @@ def main():
         SCREEN.fill((255,255,255))
         userInput=pygame.key.get_pressed()
 
-        bg.draw(SCREEN)
-        bg.update()
-        score()
+
         
         
+        if state.flower_game_start==True:
+
+            bg.draw(SCREEN)
+            bg.update()
+            score()
+            if len(obstacles) == 0:
+                obstacles.append(Stone(ROCK))
+
+            if len(gainers) == 0:
+                gainers.append(Flower(FLOWER))
+
+            for obstacle in obstacles:
+                obstacle.draw(SCREEN)
+                obstacle.update()
+                if player.rect.colliderect(obstacle.rect):
+                    #pygame.draw.rect(SCREEN,(255,0,0),player.rect,2)
+                    if state.stone_collision == False:
+                        collisions+=1
+                    state.stone_collision = True
+                    continue
+                else:
+                    state.stone_collision = False
+                    #print(collisions)
+            for fl in gainers:
+                fl.draw(SCREEN)
+                fl.update()
+                if player.rect.colliderect(fl.rect):
+                    #pygame.draw.rect(SCREEN,(0,255,0),player.rect,2)
+                    if state.flower_collision == False:
+                        scoregain+=1
+                    state.flower_collision = True
+                    continue
+                else:
+                    state.flower_collision = False
         
-        if len(obstacles) == 0:
-            obstacles.append(Stone(ROCK))
-
-        if len(gainers) == 0:
-            gainers.append(Flower(FLOWER))
-
-        for obstacle in obstacles:
-            obstacle.draw(SCREEN)
-            obstacle.update()
-            if player.rect.colliderect(obstacle.rect):
-                #pygame.draw.rect(SCREEN,(255,0,0),player.rect,2)
-                collisions+=1
-                continue
-                #print(collisions)
-        for fl in gainers:
-            fl.draw(SCREEN)
-            fl.update()
-            if player.rect.colliderect(fl.rect):
-                #pygame.draw.rect(SCREEN,(0,255,0),player.rect,2)
-                scoregain+=1
-                continue
-
-        player.draw(SCREEN)
-        player.update(userInput)      
-
+            player.draw(SCREEN)
+            player.update(userInput)      
+        elif state.main_menu==True:
+            menu.draw_mainmenu(SCREEN)
             
         pygame.display.update()
 
         # enable quit functionality in pygame
         for event in pygame.event.get():
+
             run = False if event.type == pygame.QUIT else True
+
+            if event.type == pygame.KEYDOWN:
+                if state.main_menu==True:
+                    if event.key == pygame.K_SPACE:
+                        state.main_menu = False
+                        state.flower_game_start = True
+                    
+                    if event.key == pygame.K_ESCAPE:
+                        sys.exit()
+                
+                if state.flower_game_start == True:
+                    if event.key == pygame.K_ESCAPE:
+                        state.main_menu = True
+                        state.flower_game_start = False
+                        points=0
+                        collisions=0
+                        scoregain=0
+
 
 if __name__ == '__main__':
     main()
