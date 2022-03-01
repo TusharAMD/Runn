@@ -7,14 +7,14 @@ pygame.init()
 SCREEN_HEIGHT=700
 SCREEN_WIDTH=700
 SCREEN=pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
-RUNNING=[pygame.image.load(os.path.join("Assets/mainchar","sprite_0.png")),
-         pygame.image.load(os.path.join("Assets/mainchar","sprite_1.png")),
-         pygame.image.load(os.path.join("Assets/mainchar","sprite_2.png"))]
-FLOWER=[pygame.image.load(os.path.join("Assets","flower.png"))]
-ROCK=[pygame.image.load(os.path.join("Assets","rock.png"))]
-BCKGRD=[pygame.image.load(os.path.join("Assets/road","sprite_0.png")),
-         pygame.image.load(os.path.join("Assets/road","sprite_1.png")),
-         pygame.image.load(os.path.join("Assets/road","sprite_2.png"))]
+RUNNING=[pygame.image.load(os.path.join("assets/mainchar","sprite_0.png")),
+         pygame.image.load(os.path.join("assets/mainchar","sprite_1.png")),
+         pygame.image.load(os.path.join("assets/mainchar","sprite_2.png"))]
+FLOWER=[pygame.image.load(os.path.join("assets","flower.png"))]
+ROCK=[pygame.image.load(os.path.join("assets","rock.png"))]
+BCKGRD=[pygame.image.load(os.path.join("assets/road","sprite_0.png")),
+         pygame.image.load(os.path.join("assets/road","sprite_1.png")),
+         pygame.image.load(os.path.join("assets/road","sprite_2.png"))]
 
 for i in range(len(RUNNING)):
     RUNNING[i]=pygame.transform.scale(RUNNING[i],(140,140))
@@ -227,4 +227,5 @@ def main():
                 
             pygame.display.update()
 
-main()
+if __name__ == '__main__':
+    main()
