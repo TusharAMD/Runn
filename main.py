@@ -32,6 +32,7 @@ class State:
         self.main_menu = True
         self.flower_game_start = False
 
+
         self.stone_collision = False
         self.flower_collision = False
 
