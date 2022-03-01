@@ -6,4 +6,4 @@ For eg,
 Play Chess using hand gestures
 Any arcade games using body movements
 Musical Instruments using gestures and so on.
-A example I would like to add will be a Xylophone which I made few months back, https://www.youtube.com/watch?v=URfQUlYpwAE&feature=emb_logo
+A example I would like to add will be a Xylophone which I made few months back, [![YouTubeVideo Id: o6Cnc5S1zg4](https://img.youtube.com/vi/o6Cnc5S1zg4/0.jpg)](https://www.youtube.com/watch?v=o6Cnc5S1zg4)
