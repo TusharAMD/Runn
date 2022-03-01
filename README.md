@@ -1,4 +1,9 @@
 # RUNN
 
-It's a pygame-based gaming application that can be controlled and played using gestures rather to a keyboard or mouse. The game's activities are triggered by the user's gestures, which are recorded by Opencv (left, right, bottom, top). In this game, a player must collect flowers while avoiding stones, and his performance will be judged based on his score. 
-
+Readme will be updated soon with required details
+The goal of this project is not only to enhance the current game but we contributors can also add new games.
+For eg,
+Play Chess using hand gestures
+Any arcade games using body movements
+Musical Instruments using gestures and so on.
+A example I would like to add will be a Xylophone which I made few months back, https://www.youtube.com/watch?v=URfQUlYpwAE&feature=emb_logo
