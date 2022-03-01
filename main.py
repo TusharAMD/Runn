@@ -1,3 +1,4 @@
+from itertools import filterfalse
 import pygame
 import os
 import random
@@ -30,6 +31,9 @@ class State:
     def __init__(self):
         self.main_menu = True
         self.flower_game_start = False
+
+        self.stone_collision = False
+        self.flower_collision = False
 
 class Menu:
 
@@ -246,16 +250,24 @@ def main():
                 obstacle.update()
                 if player.rect.colliderect(obstacle.rect):
                     #pygame.draw.rect(SCREEN,(255,0,0),player.rect,2)
-                    collisions+=1
+                    if state.stone_collision == False:
+                        collisions+=1
+                    state.stone_collision = True
                     continue
+                else:
+                    state.stone_collision = False
                     #print(collisions)
             for fl in gainers:
                 fl.draw(SCREEN)
                 fl.update()
                 if player.rect.colliderect(fl.rect):
                     #pygame.draw.rect(SCREEN,(0,255,0),player.rect,2)
-                    scoregain+=1
+                    if state.flower_collision == False:
+                        scoregain+=1
+                    state.flower_collision = True
                     continue
+                else:
+                    state.flower_collision = False
         
             player.draw(SCREEN)
             player.update(userInput)      
