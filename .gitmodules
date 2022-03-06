@@ -1,0 +1,3 @@
+[submodule "games/CandyCatch"]
+	path = games/CandyCatch
+	url = https://github.com/grvmourya/CandyCatch
