@@ -29,7 +29,7 @@ This repo is collection of different games predominantly created using python an
 ### Steps to Contribute
 - 1. Fork this repo and clone it on your local machine 
 - 2. Next create a new branch stating issue number and switch to it
-- 3. Make changes and commit changes
+- 3. Make changes and commit changes, I would recommend making a fresh new folder with your game name and put all the files into that.
 - 4. Push to remote
 - You can follow these links for proper code and walkthrough [How to contribute](https://opensource.com/article/19/7/create-pull-request-github), [Youtube Video](https://www.youtube.com/watch?v=waEb2c9NDL8&t=273s&ab_channel=Jovo)
 
