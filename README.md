@@ -26,4 +26,12 @@ This repo is collection of different games predominantly created using python an
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 - You are free to make any games of our own choice from scratch using any language
-- The final game would have
+- The final game should be playable by gestures but contribution is also accepted in parts i.e. one PR will be making a game, another one will be adding gesture to it and also enhancements will be accepted
+- We are also accepting ideas for the people who are not much into writing actual code but are interested to share their awesome ideas about games.
+### Steps to Contribute
+- 1. Fork this repo and clone it on your local machine 
+- 2. Next create a new branch stating issue number and switch to it
+- 3. Make changes and commit changes
+- 4. Push to remote
+- You can follow these links for proper code and walkthrough [How to contribute](https://opensource.com/article/19/7/create-pull-request-github), [Youtube Video](https://www.youtube.com/watch?v=waEb2c9NDL8&t=273s&ab_channel=Jovo)
+- 
