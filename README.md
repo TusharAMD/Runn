@@ -1,5 +1,3 @@
-Readme will be updated soon with required details The goal of this project is not only to enhance the current game but we contributors can also add new games. For eg, Play Chess using hand gestures Any arcade games using body movements Musical Instruments using gestures and so on. A example I would like to add will be a Xylophone which I made few months back, https://www.youtube.com/watch?v=URfQUlYpwAE&ab_channel=TusharAmdoskar
-
 # Runn Gesture Gaming
 <div align="center">
   <img src="https://i.ibb.co/NnvbG7r/Runn.jpg">
@@ -18,7 +16,7 @@ Readme will be updated soon with required details The goal of this project is no
 </div>
 
 ## 📖 Introduction 
-This repo is collection of different games predominantly created using python and uses gestures instead of traditional keyboard or mouse input to play games. The games will include everything from arcade, sci-fiction, shooting etc.
+This repo is collection of different games predominantly created using python and uses gestures instead of traditional keyboard or mouse input to play games. The games will include everything from arcade, sci-fiction, shooting etc. [![Gesture Gaming](https://res.cloudinary.com/marcomontalbano/image/upload/v1646630866/video_to_markdown/images/youtube--o6Cnc5S1zg4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=o6Cnc5S1zg4&ab_channel=TusharAmdoskar "Gesture Gaming")
 
 ## ✨ How to Contribute
 
@@ -34,4 +32,15 @@ This repo is collection of different games predominantly created using python an
 - 3. Make changes and commit changes
 - 4. Push to remote
 - You can follow these links for proper code and walkthrough [How to contribute](https://opensource.com/article/19/7/create-pull-request-github), [Youtube Video](https://www.youtube.com/watch?v=waEb2c9NDL8&t=273s&ab_channel=Jovo)
-- 
+
+## Part of Girlscript Summer of Code 2022
+<img width="200px" src = https://i.ibb.co/gF9Pvd4/image.png></img>
+
+## 💻 Languages and Frameworks
+- Python
+- OpenCV
+- Mediapipe
+- Pygame
+
+## Licenses
+[MIT LICENSE](LICENSE)
