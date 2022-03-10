@@ -11,7 +11,7 @@
 [![GitHub issues closed](https://img.shields.io/github/issues-closed/TusharAMD/Runn.svg)](https://github.com/TusharAMD/Runn/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/TusharAMD/Runn.svg)](https://github.com/TusharAMD/Runn/pulls)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/TusharAMD/Runn.svg)](https://github.com/TusharAMD/Runn/pulls?q=is%3Apr+is%3Aclosed)
-![GitHub repo size](https://img.shields.io/github/repo-size/HarshCasper/Rotten-Scripts?color=yellow)
+![GitHub repo size](https://img.shields.io/github/repo-size/TusharAMD/Runn?color=yellow)
 
 </div>
 
