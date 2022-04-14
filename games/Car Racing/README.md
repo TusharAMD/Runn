@@ -11,4 +11,9 @@
 - Control Running Straight 
 - Control Running Back
 
+### Libraries Used
+- openCV
+- conda
+- imutils
+- pyobjc-framework-Quartz
 
