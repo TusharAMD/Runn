@@ -5,7 +5,7 @@
 <h1 align="center">Turtle Game</h1>
 
 <div align="center">
-Guess the Turtle who will win
+Guess the Turtle who will win the race
 </div>
 
 <br />
