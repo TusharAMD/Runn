@@ -127,3 +127,11 @@ elif p4.xcor()>=240:
         i = i +1
         p4.lt(5)
         p4.shapesize(i/20)
+# to write winner on screen
+t.penup()
+t.hideturtle()
+t.goto(-100,-30)
+t.color('grey')
+t.write('WINNER',font =('cursive',40,'bold') )     
+
+    
