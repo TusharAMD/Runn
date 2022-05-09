@@ -63,3 +63,21 @@ t.lt(90)
 t.bk(340)
 t.rt(90)
 t.stamp()
+
+#to import players
+def importp(color,y):
+    
+    p = t.clone()
+    p.speed(0)
+    p.shapesize(2)
+    p.color(color)
+    p.shape('turtle')
+    p.penup()
+    p.goto(-270,y)
+    p.pendown()
+    return p
+
+p1 = importp('blue',135)
+p2 =importp('yellow',45)
+p3= importp('lime',-45)
+p4 = importp('peru',-135)
