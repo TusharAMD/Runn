@@ -84,3 +84,15 @@ p4 = importp('peru',-135)
 
 #to pause for 2 secs    
 time.sleep(2)
+
+# to run turtles
+def race(p):
+    p.speed = 0
+    p.fd(randint(1,10))
+    time.sleep(0.05)
+    
+while p1.xcor()< 240 and p2.xcor()<240 and p3.xcor()<240 and p4.xcor()<240:
+    race(p1)
+    race(p2)
+    race(p3)
+    race(p4)
