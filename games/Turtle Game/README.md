@@ -35,3 +35,7 @@ Turtle Game is made using python after running the file you have to guess which 
 ```cd games``` <br>
 ```cd Turtle Game```      <br>
 ```Find turtle-game.py and run it```
+
+## 📷 Screenshots
+
+![ss1](./img/ss1turtle.png)
