@@ -1,5 +1,5 @@
  <p align="center">
-    <img alt="" height="80" src="">
+    <img alt="" height="80" src="./img/add-read.png">
   </a>
 </p>
 <h1 align="center">Turtle Game</h1>
