@@ -81,3 +81,6 @@ p1 = importp('blue',135)
 p2 =importp('yellow',45)
 p3= importp('lime',-45)
 p4 = importp('peru',-135)
+
+#to pause for 2 secs    
+time.sleep(2)
