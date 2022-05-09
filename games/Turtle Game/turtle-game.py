@@ -25,3 +25,10 @@ t.fd(640)
 t.rt(90)
 t.fd(400)
 t.end_fill()
+
+#to write turtle race on window
+t.penup()
+t.goto(-140,230)
+t.color('white')
+t.pendown()
+t.write('TURTLE RACE',font=('Arial',30,'bold'))
