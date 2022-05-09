@@ -27,3 +27,11 @@
   - Further Install this all Libraries using terminal : <br>
     ```pip install PythonTurtle```
 
+# 🏎️  How to Run the code:
+
+- Clone this repository <br>
+```git clone https://github.com/TusharAMD/Runn```
+- Change directory <br>
+```cd games``` <br>
+```cd Turtle Game```      <br>
+```Find turtle-game.py and run it```
