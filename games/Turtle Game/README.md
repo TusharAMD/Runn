@@ -5,7 +5,7 @@
 <h1 align="center">Turtle Game</h1>
 
 <div align="center">
- 
+Guess the Turtle who will win
 </div>
 
 <br />
@@ -19,7 +19,7 @@
 </div>
 
 ## ⚡️  Introduction
-
+Turtle Game is made using python after running the file you have to guess which turtle gonna win every time you run the file a random turtle gonna win the match
 
 # ✅ Install Dependecies:
   - You must have Python 3.8.3 or above. I expect everyone will have it. If not then update it now what are you waiting for.
