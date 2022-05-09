@@ -96,3 +96,34 @@ while p1.xcor()< 240 and p2.xcor()<240 and p3.xcor()<240 and p4.xcor()<240:
     race(p2)
     race(p3)
     race(p4)
+
+# to declare winner
+i = 0
+
+if p1.xcor()>=240:
+    print('Blue turtle is winner')
+    for i in range(72):
+        i = i +1
+        p1.lt(5)
+        p1.shapesize(i/20)
+           
+elif p2.xcor()>=240:
+    print('Yellow turtle is winner')
+    for i in range(72):
+        i = i +1
+        p2.lt(5)
+        p2.shapesize(i/20)
+         
+elif p3.xcor()>=240:    
+    print('Green turtle is winner')
+    for i in range(72):
+        i = i +1
+        p3.lt(5)
+        p3.shapesize(i/20)
+             
+elif p4.xcor()>=240:   
+    print('Brown turtle is winner')
+    for i in range(72):
+        i = i +1
+        p4.lt(5)
+        p4.shapesize(i/20)
