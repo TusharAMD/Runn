@@ -1,5 +1,5 @@
  <p align="center">
-    <img alt="" height="80" src="">
+    <img alt="" height="80" src="./img/add-readme.png">
   </a>
 </p>
 <h1 align="center">Balloon Shooter</h1>
@@ -38,4 +38,4 @@ Turtle Game is made using python after running the file you have to  hit the mor
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./img/ballss.png)
