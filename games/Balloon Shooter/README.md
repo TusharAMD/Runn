@@ -19,7 +19,7 @@ Balloon Shooter hit the more balloon and win the game
 </div>
 
 ## ⚡️  Introduction
-Turtle Game is made using python after running the file you have to  hit the more balloon and win the game
+Balloon Shooter is made using python after running the file you have to  hit the more balloon and win the game
 
 # ✅ Install Dependecies:
   - You must have Python 3.8.3 or above. I expect everyone will have it. If not then update it now what are you waiting for.
