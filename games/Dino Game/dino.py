@@ -3,7 +3,7 @@ import random
 import time
 
 wn = turtle.Screen()
-wn.title("Dinosaur Game by @TokyoEdTech")
+wn.title("Dino game")
 wn.bgcolor("black")
 wn.setup(height=320, width=800)
 wn.bgpic("./background.gif")
