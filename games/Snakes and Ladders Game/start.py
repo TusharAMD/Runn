@@ -115,4 +115,33 @@ def diceOn():
         p1.place(x=p1coord[0]-5,y=p1coord[1]-5,width=15, height=15)
         p2.place(x=p2coord[0],y=p2coord[1],width=15, height=15)
 
+#Button
+temp=[None,None,None]
+temp2=[None,None,None]
+count6=0
+now=1
+q=0
+ladder=[[2,7,8,15,21,28,36,51,71,78,87],[38,14,31,26,42,84,44,67,91,98,94]]
+snake=[[99,95,92,74,64,62,49,46,16],[80,75,88,53,60,19,11,25,6]]
 
+photo = PhotoImage(file = "Board.png")
+label = Label(root,image=photo)
+label.place(x=0,y=0)
+
+p1 = Label(root,bg='cyan',text='P1',fg='black')
+p1.place(x=10,y=305,width=15, height=15)
+p1coord=[9,315,1]
+
+p2 = Label(root,bg='lime',text='P2',borderwidth=5)
+p2.place(x=15,y=315,width=15, height=15)
+p2coord=[9,315,1]
+
+dice = Button(root,text='+',fg = 'White',bg='Black',activebackground='black',borderwidth=0,command=diceOn)
+dice['font'] = font.Font(size=50)
+dice.place(x=5,y=350,width=50, height=35)
+
+label = Label(root,text='',fg = 'White',bg='Black')
+label['font'] = font.Font(size=14)
+label.place(x=110,y=370)
+
+root.mainloop()
