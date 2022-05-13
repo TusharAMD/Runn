@@ -124,7 +124,7 @@ q=0
 ladder=[[2,7,8,15,21,28,36,51,71,78,87],[38,14,31,26,42,84,44,67,91,98,94]]
 snake=[[99,95,92,74,64,62,49,46,16],[80,75,88,53,60,19,11,25,6]]
 
-photo = PhotoImage(file = "Board.png")
+photo = PhotoImage(file="./img/Board.png")
 label = Label(root,image=photo)
 label.place(x=0,y=0)
 
