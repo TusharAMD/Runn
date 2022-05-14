@@ -20,7 +20,7 @@ Fight in space
 </div>
 
 ## ⚡️  Introduction
-
+To move Spacecraft use right and left arrow of keyword
 
 # ✅ Install Dependecies:
   - You must have Python 3.8.3 or above. I expect everyone will have it. If not then update it now what are you waiting for.
