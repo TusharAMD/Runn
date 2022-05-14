@@ -34,8 +34,8 @@ To move Spacecraft use right and left arrow of keyword
 ```git clone https://github.com/TusharAMD/Runn```
 - Change directory <br>
 ```cd games``` <br>
-```cd Turtle Game```      <br>
-```Find turtle-game.py and run it```
+```cd Space War```      <br>
+```Find start.py and run it```
 
 ## 📷 Screenshots
 
