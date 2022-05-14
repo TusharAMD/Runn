@@ -39,4 +39,4 @@ To move Spacecraft use right and left arrow of keyword
 
 ## 📷 Screenshots
 
-![ss1]()
+![ss1](./img/spacess.png)
