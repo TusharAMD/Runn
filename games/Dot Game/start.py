@@ -14,3 +14,4 @@ BLUE = (78, 193, 246)
 GREEN = (0, 255, 0)
 BLACK = (12, 12, 12)
 
+font = pygame.font.SysFont('cursive', 25)
