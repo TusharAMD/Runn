@@ -356,5 +356,4 @@ def poolTable():
         pygame.display.update()
         clock.tick(60)
 
-
 poolTable()
