@@ -1,0 +1,2 @@
+## Pool Game
+Ball Pool game project is coded in Python. This game is a simple cue or pool game. While playing the game, all you have to do is just use your mouse for directional movement and use the right-click mouse button to fire the shot. There is a simple and clean GUI for easy gameplay.
