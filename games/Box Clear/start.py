@@ -323,7 +323,7 @@ if __name__ == '__main__':
 
 	mine_icon = PhotoImage(file='./icons/sad.png')
 	minesweeper_logo = PhotoImage(file='./icons/imgonline-com-ua-resize-MgAIfPaYv4DK8.png')
-	sad_face = PhotoImage(file='icons/sad.png')
+	sad_face = PhotoImage(file='./icons/sad.png')
 
 	app = Application(master=root)
 	app.mainloop()
