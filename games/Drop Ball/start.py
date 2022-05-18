@@ -11,20 +11,25 @@ def create_board():
     board=np.zeros((ROW_COUNT,COLUMN_COUNT))
     return board
 
+
 def print_board(board):
     print(np.flip(board,0))
+
 
 def drop_piece(board,row,col,piece):
     board[row][col]=piece
     return board
 
+
 def is_valid_location(board,col):
     return board[ROW_COUNT-1][col]==0
+
 
 def get_next_open_row(board,col):
     for r in range(ROW_COUNT):
         if board[r][col]==0:
             return r
+
 
 def winning_move(board,piece):
     for c in range((COLUMN_COUNT-3)):
@@ -32,15 +37,18 @@ def winning_move(board,piece):
             if board[r][c]==piece and board[r][c+1]==piece and board[r][c+2]== piece and board[r][c+3]==piece:
                 return True
 
+
     for c in range((COLUMN_COUNT)):
         for r in range(ROW_COUNT-3):
             if board[r][c] == piece and board[r+1][c ] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
                 return True
 
+
     for c in range((COLUMN_COUNT-3)):
         for r in range(ROW_COUNT-3):
             if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
                 return True
+
 
     for c in range((COLUMN_COUNT-3)):
         for r in range(3,ROW_COUNT):
@@ -48,10 +56,12 @@ def winning_move(board,piece):
                 return True
 
 
+
 def draw_board(board):
     for c in range(COLUMN_COUNT):
         for r in range(ROW_COUNT):
             pygame.draw.rect(screen, (250,128,114), (c*SQUARE_SIZE, r *SQUARE_SIZE+SQUARE_SIZE,SQUARE_SIZE,SQUARE_SIZE))
+
 
             pygame.draw.circle(screen,(0,0,0),(int(c*SQUARE_SIZE+SQUARE_SIZE/2),int(r*SQUARE_SIZE+SQUARE_SIZE/2 + SQUARE_SIZE)),RADIUS)
     for c in range(COLUMN_COUNT):
@@ -63,6 +73,7 @@ def draw_board(board):
     pygame.display.update()
 board=create_board()
 
+
 turn=0
 pygame.init()
 SQUARE_SIZE=100
@@ -72,6 +83,8 @@ size=(width,height)
 RADIUS=int((SQUARE_SIZE/2)-5)
 screen=pygame.display.set_mode(size)
 
+
+
 draw_board(board)
 pygame.display.update()
 pygame.display.set_caption('Connect Four Game')
@@ -79,10 +92,13 @@ game_still_running=True
 myfont=pygame.font.SysFont("monospace",75)
 
 
+
+
 while game_still_running:
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
             sys.exit()
+
 
         if event.type==pygame.MOUSEMOTION:
             pygame.draw.rect(screen, (0, 0, 0), (0,0,width, SQUARE_SIZE))
@@ -108,6 +124,8 @@ while game_still_running:
                         screen.blit(label,(40,10))
                         game_still_running=False
 
+
+
             else:
                 posx = event.pos[0]
                 col = int(math.floor(posx / SQUARE_SIZE))
@@ -125,6 +143,8 @@ while game_still_running:
             turn+=1
             turn=turn%2
             print(turn)
+
+
 
 if not game_still_running:
     pygame.time.wait(3000)
