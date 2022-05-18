@@ -70,5 +70,4 @@ class NumberGuessing:
 
         root.mainloop()
 
-
 NumberGuessing()
