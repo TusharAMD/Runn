@@ -1,7 +1,7 @@
 import random
 import tkinter
 
-wts=open("settings.txt","r")
+wts=open("./settings.txt","r")
 global fs
 fs=int(wts.read())
 print(fs)
@@ -50,7 +50,7 @@ def menug():
             wts.close()
 
 
-    title=tkinter.Label(menu, text="Simple Fighting Game", font=("Courier", 28, "bold"), pady=20,bg="Green", fg="white")
+    title=tkinter.Label(menu, text="Fighting Game", font=("Courier", 28, "bold"), pady=20,bg="Green", fg="white")
     boxert=tkinter.Button(menu, text="Boxer", command=boxer, pady=20, width=100)
     kickboxert=tkinter.Button(menu, text="Muay Thai",command=kickboxer, pady=20, width=100)
     wrestlert=tkinter.Button(menu, text="Street Fighter",command=wrestler, pady=20, width=100)
