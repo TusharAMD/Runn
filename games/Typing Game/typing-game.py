@@ -61,7 +61,7 @@ from tkinter import messagebox
 root = Tk()
 root.geometry('800x600+400+100')
 root.configure(bg='black')
-root.title('Typing Speed Game')
+root.title('Typing Game')
 root.iconbitmap('logo.ico')
 
 ##############################################
