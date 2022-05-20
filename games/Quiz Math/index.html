@@ -33,6 +33,30 @@
         </div>
     </section>
 
+
+    <script>
+        var n1, n2;
+        n1 = Math.floor(Math.random() * 10 + 1);
+        n2 = Math.floor(Math.random() * 10 + 1);
+
+        console.log(n1, n2);
+
+        document.getElementById('v1').value = n1;
+        document.getElementById('v2').value = n2;
+
+        var ans = n1 + n2;
+        async function jsGame() {
+            var userans = document.getElementById("answer").value;
+            console.log(userans);
+
+            if (userans == ans) {
+                alert('Well Done! Your answer is correct. ');
+            } else {
+                alert("Correct answer is " + ans + ". Try again. ");
+            }
+            history.go(0);
+        }
+    </script>
 </body>
 
 </html>
