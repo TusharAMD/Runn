@@ -56,7 +56,7 @@ def displayNextWord(event):
 root=Tk()
 root.title("Color Game")
 root.geometry("500x200")
-root.iconbitmap("game-console.ico")
+root.iconbitmap("./img/game-console.ico")
 
 app_font=font.Font(family='Helvetica', size=12)
 
