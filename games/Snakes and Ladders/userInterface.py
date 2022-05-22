@@ -182,7 +182,7 @@ class Display(object):
             self.diceRoll.place(x=-30, y=-30)
             print("Won", self.turn + 1)
             top = Toplevel()
-            top.title("Snake and Ladder")
+            top.title("Snakes and Ladders")
             message = "Player " + str(self.turn + 1) + " Won"
             msg = Message(top, text=message)
             top.geometry("%dx%d%+d%+d" % (100, 100, 250, 125))
