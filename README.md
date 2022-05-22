@@ -36,6 +36,11 @@ This repo is collection of different games predominantly created using python an
 ## Part of Girlscript Summer of Code 2022
 <img width="200px" src = https://i.ibb.co/gF9Pvd4/image.png></img>
 
+## Contributors
+<a href = "https://github.com/TusharAMD/Runn/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=TusharAMD/Runn"/>
+</a>
+
 ## 💻 Languages and Frameworks
 - Python
 - OpenCV
