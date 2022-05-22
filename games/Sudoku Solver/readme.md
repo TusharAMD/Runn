@@ -1,7 +1,9 @@
-# Sudoku Solver using PYTHON
+## Sudoku Solver
 
-It's  a Simple Sudoku Solver , where user will give a random sudoku format and this applicaion will solve this
+Sudoku Solver help you to solve sudoku puzzle
 
+## Tech Stack
 
-It's made using **Python**
-
+HTML
+CSS
+JS
