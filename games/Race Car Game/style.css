@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 500px;
+    width: 450px;
+    border: 1px solid black;
+    margin: 1rem auto;
+    background: url(./bg.jpg);
+    background-size: contain;
+    overflow: hidden;
+}
+
+#first-car {
+    height: 100px;
+    width: 120px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: race 1.7s linear infinite;
+}
+
+#first-car img {
+    height: 100px;
+}
+
+@keyframes race {
+
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 500px;
+    }
+
+}
+
+#second-car {
+    height: 100px;
+    width: 120px;
+    position: relative;
+    top: 250px;
+    text-align: center;
+    left: 165px;
+}
+
+#second-car img {
+    height: 100px;
+}
+
+
+#result{
+    height: 200px;
+    width: 400px;
+    background-color: cornflowerblue;
+    margin:  1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    display:none ;
+}
+
+#score {
+    font-size: 1em;
+    color: blue
+}
+
+#btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: yellowgreen;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
