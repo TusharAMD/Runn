@@ -15,13 +15,12 @@
 
 #first-car {
     height: 100px;
-    width: 140px;
-    background-color: black;
+    width: 120px;
     position: relative;
     top: 0px;
     left: 0px;
     text-align: center;
-    animation: race 1.5s linear infinite;
+    animation: race 1.7s linear infinite;
 }
 
 #first-car img {
@@ -42,15 +41,43 @@
 
 #second-car {
     height: 100px;
-    width: 140px;
-    background-color: aqua;
+    width: 120px;
     position: relative;
     top: 250px;
     text-align: center;
-    left: 160px;
+    left: 165px;
 }
 
 #second-car img {
     height: 100px;
 }
 
+
+#result{
+    height: 200px;
+    width: 400px;
+    background-color: cornflowerblue;
+    margin:  1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    display:none ;
+}
+
+#score {
+    font-size: 1em;
+    color: blue
+}
+
+#btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: yellowgreen;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
