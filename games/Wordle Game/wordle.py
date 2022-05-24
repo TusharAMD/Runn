@@ -42,12 +42,6 @@ class Wordle:
             else:
                 return False
 
-    def game_result(self):
-        win = (False, 99)
-        for i, r in enumerate(self.board):
-            if self.word == ''.join(r):
-                win = (True, i)
-                break
         return win
 
     def update_board(self, u_inp):

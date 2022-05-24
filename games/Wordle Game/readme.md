@@ -1,8 +1,8 @@
 # WORDLE GAME USING PYTHON
-> It's a simple **WORDLE GAME**
+> It's a simple **WORDLE GAME** made Python
 
 
-## Tech Stack Used:
+## Tech Stack Used   :
 **PYTHON**
 
 
