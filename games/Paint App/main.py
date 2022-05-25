@@ -66,7 +66,7 @@ class main:
 if __name__ == '__main__':
     root = Tk()
     main(root)
-    root.title('Application')
+    root.title('Drawing App')
     root.mainloop()
 
 
