@@ -7,12 +7,12 @@
   
   
 
-<h3  align="center">Paint App</h3>
+<h3  align="center">Drawing App</h3>
 
   
 
 <p  align="center">
-Paint App using Python
+Drawing App using Python
 </p>
 
 <br>
@@ -64,7 +64,7 @@ Paint App using Python
   
 
 ## About The Project
-A simple Paint App built using Python.
+A simple Drawing App built using Python.
   
 
 <p  align="right">(<a  href="#top">back to top</a>)</p>
