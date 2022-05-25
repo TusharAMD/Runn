@@ -10,7 +10,7 @@ while run:
     root = Tk()
     root.geometry('905x700')
     root.title('HANG MAN')
-    root.config(bg='#E7FFFF')
+    root.config(bg='#9b4bcc')
     count = 0
     win_count = 0
 
@@ -24,7 +24,7 @@ while run:
     x = 250
     for i in range(0, len(selected_word)):
         x += 60
-        exec('d{}=Label(root,text="_",bg="#E7FFFF",font=("arial",40))'.format(i))
+        exec('d{}=Label(root,text="_",bg="#9b4bcc",font=("arial",40))'.format(i))
         exec('d{}.place(x={},y={})'.format(i, x, 450))
 
     # letters icon
@@ -49,14 +49,14 @@ while run:
 
     for q1 in button:
         exec(
-            '{}=Button(root,bd=0,command=lambda:check("{}","{}"),bg="#E7FFFF",activebackground="#E7FFFF",font=10,image={})'.format(
+            '{}=Button(root,bd=0,command=lambda:check("{}","{}"),bg="#9b4bcc",activebackground="#9b4bcc",font=10,image={})'.format(
                 q1[0], q1[1], q1[0], q1[1]))
         exec('{}.place(x={},y={})'.format(q1[0], q1[2], q1[3]))
 
     # hangman placement
     han = [['c1', 'h1'], ['c2', 'h2'], ['c3', 'h3'], ['c4', 'h4'], ['c5', 'h5'], ['c6', 'h6'], ['c7', 'h7']]
     for p1 in han:
-        exec('{}=Label(root,bg="#E7FFFF",image={})'.format(p1[0], p1[1]))
+        exec('{}=Label(root,bg="#9b4bcc",image={})'.format(p1[0], p1[1]))
 
     # placement of first hangman image
     c1.place(x=300, y=- 50)
@@ -72,10 +72,10 @@ while run:
 
 
     e1 = PhotoImage(file='exit.png')
-    ex = Button(root, bd=0, command=close, bg="#E7FFFF", activebackground="#E7FFFF", font=10, image=e1)
+    ex = Button(root, bd=0, command=close, bg="#9b4bcc", activebackground="#9b4bcc", font=10, image=e1)
     ex.place(x=770, y=10)
     s2 = 'SCORE:' + str(score)
-    s1 = Label(root, text=s2, bg="#E7FFFF", font=("arial", 25))
+    s1 = Label(root, text=s2, bg="#9b4bcc", font=("arial", 25))
     s1.place(x=10, y=10)
 
 
