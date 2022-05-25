@@ -43,7 +43,7 @@ def start_main_page():
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="#99ffd6",
+            bg="#b713d4",
             cursor="hand2",
             command=lambda: start_game(1),
         )
@@ -54,7 +54,7 @@ def start_main_page():
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="#99ffd6",
+            bg="#b713d4",
             cursor="hand2",
             command=lambda: start_game(2),
         )
@@ -65,7 +65,7 @@ def start_main_page():
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="#99ffd6",
+            bg="#b713d4",
             cursor="hand2",
             command=lambda: start_game(3),
         )
@@ -76,7 +76,7 @@ def start_main_page():
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="#99ffd6",
+            bg="#b713d4",
             cursor="hand2",
             command=lambda: start_game(4),
         )
@@ -87,7 +87,7 @@ def start_main_page():
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="#99ffd6",
+            bg="#b713d4",
             cursor="hand2",
             command=lambda: start_game(5),
         )
@@ -98,7 +98,7 @@ def start_main_page():
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="#99ffd6",
+            bg="#b713d4",
             cursor="hand2",
             command=lambda: start_game(6),
         )
@@ -109,7 +109,7 @@ def start_main_page():
             borderwidth=8,
             font=("", 18),
             fg="#000000",
-            bg="#99ffd6",
+            bg="#b713d4",
             cursor="hand2",
             command=lambda: start_game(7),
         )
@@ -152,7 +152,7 @@ def start_main_page():
         width=18,
         borderwidth=8,
         fg="#000000",
-        bg="#99ffd6",
+        bg="#b713d4",
         font=("", 13),
         cursor="hand2",
         command=show_option,

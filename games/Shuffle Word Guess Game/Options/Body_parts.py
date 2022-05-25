@@ -57,14 +57,14 @@ def main():
     my_window.geometry("500x500+500+150")
     my_window.resizable(0, 0)
     my_window.title("Shuffle Word Guess Game")
-    my_window.configure(background="#e6fff5")
+    my_window.configure(background="#3a1978")
 
     img1 = PhotoImage(file="back.png")
 
     lab_img1 = Button(
         my_window,
         image=img1,
-        bg='#e6fff5',
+        bg='#3a1978',
         border=0,
         justify='center',
         command=back,
@@ -74,7 +74,7 @@ def main():
     score = Label(
         text="Score:- 0",
         pady=10,
-        bg="#e6fff5",
+        bg="#3a1978",
         fg="#000000",
         font="Titillium  14 bold"
     )
@@ -83,7 +83,7 @@ def main():
     word = Label(
         text=jumbled_rand_word,
         pady=10,
-        bg="#e6fff5",
+        bg="#3a1978",
         fg="#000000",
         font="Titillium  50 bold"
     )
@@ -131,7 +131,7 @@ def main():
 
     ans_lab = Label(
         text="",
-        bg="#e6fff5",
+        bg="#3a1978",
         fg="#000000",
         font="Courier 15 bold",
     )
