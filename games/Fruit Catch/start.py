@@ -36,7 +36,7 @@ class ScoreBoard():
         self.highScoreVar.set(self.highScore)
 
     def loadScore(self):
-        with open("high-score.txt", "r") as data:
+        with open("./high-score.txt", "r") as data:
             return int(data.read())                
         
     def saveScore(self):
