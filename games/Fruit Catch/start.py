@@ -2,11 +2,6 @@ from tkinter import *
 from random import *
 import tkinter.messagebox
 
-from tkinter import *
-from random import *
-import tkinter.messagebox
-
-
 
 class ScoreBoard():
     
@@ -81,10 +76,10 @@ class ItemsFallingFromSky():
         
         # create falling items
         if self.isgood:   
-            self.itemPhoto = tkinter.PhotoImage(file = "images/{}" .format( choice(self.goodItems) ) )
+            self.itemPhoto = tkinter.PhotoImage(file = "./images/{}" .format( choice(self.goodItems) ) )
             self.fallItem = self.canvas.create_image( (self.xPosition, 50) , image=self.itemPhoto , tag="good" )
         else:
-            self.itemPhoto = tkinter.PhotoImage(file = "images/{}" . format( choice(self.badItems) ) )
+            self.itemPhoto = tkinter.PhotoImage(file = "./images/{}" . format( choice(self.badItems) ) )
             self.fallItem = self.canvas.create_image( (self.xPosition, 50) , image=self.itemPhoto , tag="bad" )
             
         # trigger falling item movement
@@ -138,7 +133,7 @@ class TheGame(ItemsFallingFromSky,ScoreBoard):
         self.canvas.grid(row=1, column=1, padx=25, pady=25, sticky=W+N)
 
         # player character
-        self.playerPhoto = tkinter.PhotoImage(file = "images/{}" .format( "jew.gif" ) )
+        self.playerPhoto = tkinter.PhotoImage(file = "./images/{}" .format( "jew.gif" ) )
         self.playerChar = self.canvas.create_image( (475, 560) , image=self.playerPhoto , tag="player" )
 
         # define score board
