@@ -4,6 +4,7 @@ if sys.version_info.major > 2:
     import tkinter as tk
 else:
     import Tkinter as tk
+    
 RED, BLACK, WHITE, DARK_RED, BLUE = "red", "black", "white", "dark red", "blue"
 ZERO = 2 #for edges.
 LOWER, UPPER = "lower", "upper"
