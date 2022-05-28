@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import *
 from collections import Counter
 
-Functions
+#Functions
 def countWords(s):
     signos = [',', '.', ';', ':']
     cleanstr = ''
