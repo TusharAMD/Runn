@@ -1,0 +1,2 @@
+# Food Catcher Game:
+An food catcher game tests your concentration and the speed of your reflexes as you have to catch food falling all around the screen with one basket. To create an food catcher game you have to design an animation of falling food at random positions and a basket will be catching all the falling food.
