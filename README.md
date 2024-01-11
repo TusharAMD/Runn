@@ -15,6 +15,10 @@
 
 </div>
 
+## IWOC PARTICIPANTS [READ THIS!]
+
+### https://github.com/TusharAMD/Runn/issues/548 
+
 ## 📖 Introduction 
 This repo is collection of different games predominantly created using python and uses gestures instead of traditional keyboard or mouse input to play games. The games will include everything from arcade, sci-fiction, shooting etc. [![Gesture Gaming](https://res.cloudinary.com/marcomontalbano/image/upload/v1646630866/video_to_markdown/images/youtube--o6Cnc5S1zg4-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=o6Cnc5S1zg4&ab_channel=TusharAmdoskar "Gesture Gaming")
 
