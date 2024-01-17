@@ -1,9 +1,3 @@
-# Bagels, by Al Sweigart al@inventwithpython.com
-# A deductive logic game where you must guess a number based on clues.
-# This code is available at https://nostarch.com/big-book-small-python-programming
-# A version of this game is featured in the book, "Invent Your Own
-# Computer Games with Python" https://nostarch.com/inventwithpython
-# Tags: short, game, puzzle
 __version__ = 1  # Updated version number
 import random
 
@@ -12,9 +6,7 @@ MAX_GUESSES = 10  # (!) Try setting this to 1 or 100.
 
 
 def main():
-    print('''Bagels, a deductive logic game.
-By Al Sweigart al@inventwithpython.com
-
+    print('''
 I am thinking of a {}-digit number with no repeated digits.
 Try to guess what it is. Here are some clues:
 When I say:    That means:
