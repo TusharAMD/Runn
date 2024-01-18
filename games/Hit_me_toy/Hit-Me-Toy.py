@@ -1,23 +1,34 @@
 import random
 
-def hit_me_toy():
-    print("Welcome to Hit Me Toy!")
-    print("I have selected a random number between 1 and 100. Your task is to guess it.")
+def hit_me_toy_game():
+    print("Welcome to Hit Me Toy Game!")
 
-    target_number = random.randint(1, 100)
+    total_points = 0
     attempts = 0
 
     while True:
-        user_guess = int(input("Enter your guess: "))
+        input("Press Enter to punch the toy...")
+        
+        # Generate a random strength for the toy
+        toy_strength = random.randint(1, 10)
+
+        # Get the player's punch strength (assuming a valid input)
+        punch_strength = int(input("Enter the strength of your punch (1-10): "))
+        
+        # Calculate points based on the difference between toy and punch strength
+        points = max(0, 10 - abs(toy_strength - punch_strength))
+        total_points += points
+
+        print(f"Toy strength: {toy_strength}")
+        print(f"You scored {points} points!")
+
+        play_again = input("Do you want to punch again? (yes/no): ").lower()
         attempts += 1
 
-        if user_guess < target_number:
-            print("Too low! Try again.")
-        elif user_guess > target_number:
-            print("Too high! Try again.")
-        else:
-            print(f"Congratulations! You guessed the number {target_number} in {attempts} attempts.")
+        if play_again != 'yes':
             break
 
+    print(f"Game over! You scored a total of {total_points} points in {attempts} attempts.")
+
 if __name__ == "__main__":
-    hit_me_toy()
+    hit_me_toy_game()
