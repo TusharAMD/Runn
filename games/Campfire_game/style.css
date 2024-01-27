@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #0A043C; /* Dark Purple */
+    overflow: hidden;
+}
+
+.campfire {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 200px;
+    background-color: #FF4500; /* Orange Red */
+    border-radius: 0 0 20px 20px;
+}
+
+.basket {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 60px;
+    background-color: #8B4513; /* Saddle Brown */
+    border-radius: 10px;
+}
+
+.log {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #CD853F; /* Peru */
+    border-radius: 50%;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FFFFFF; /* White */
+    font-size: 20px;
+}
